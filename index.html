@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <img src="./img/tobias-rademacher-y15WUAnF2Mk-unsplash.jpg" alt="image">
+<div class="imgHalf">
+    <img class="bg" src="./img/john-towner-3Kv48NS4WUU-unsplash.jpg" alt="image">
+    <div class="logoTxt">Pine Forest Trails</div>
+    <div class="source">Photo by <a href="https://unsplash.com/@heytowner">John Towner</a> on <a href="https://unsplash.com/photos/empty-concrete-road-covered-surrounded-by-tall-tress-with-sun-rays-3Kv48NS4WUU ">Unsplash</a></div>
+    <img class="logo" src="./img/tree.png" alt="TREE">
+</div>
 <div class="otherHalf">
     <div class="tCont">
         <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
@@ -15,6 +20,7 @@
         <p>You <em>know</em> you want to.</p>
     </div>
     <div class="formCont">
+        <div>Let's do this!</div>
         <form action="" method="post">
             <fieldset>
                 <label for="firstName"> FIRST NAME</label>
@@ -25,12 +31,16 @@
                 <input type="text" id="pw" name="pw">
             </fieldset>
             <fieldset>
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
+                <label for="lastName">LAST NAME</label>
+                <input type="text" id="lastName" name="lastName">
+                <label for="telNum">PHONE NUMBER</label>
+                <input type="tel" id="telNum" name="telNum" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" >
+                <label for="confPw">CONFIRM PASSWORD</label>
+                <input type="text" id="confPw" name="confPw">
+            </fieldset>
+            <fieldset>
+                <button type="submit">Create Account</button>
+                <div>Already have an account? <a href="">Log in</a></div>
             </fieldset>
     </form>
     </div>
