@@ -1,8 +1,14 @@
+@font-face {
+    font-family: myFont;
+    src: url(./font/ReckyRegular-BWvXl.ttf);
+}
+
 body {
     box-sizing: border-box;
     display: flex;
     padding: 0;
     margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Right half */
@@ -12,7 +18,6 @@ body {
     max-width: 700px;
     min-width: 400px;
     height: 100vh;
-    border: red solid 5px;
 }
 
 .bg {
@@ -24,21 +29,25 @@ body {
 .logo {
     width: 100px;
     height: 160px;
+    margin: 25px;
 }
 
 .logoTxt {
     width: 100%;
     color: white;
     position: absolute;
-    top: 30%;
+    top: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: red solid 5px;;
+    font-size: 40px;
+    font-family: myFont;
+    background-color: rgba(0, 0, 0, .60);
 }
 
-a:visited {
+.source>a:visited {
     color: white;
+    font-weight: 100;
 }
 
 .sourceCont {
@@ -55,13 +64,42 @@ a:visited {
 .otherHalf {
     min-width: 700px;
     height: 100vh;
-    border: red solid 5px;
-    background-color: white;
+    background-color: #f7f7f7;
 }
 
 p {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
+    padding: 150px 100px 30px 60px;
+}
+
+.formCont {
+    border: grey solid 1px;
+    box-shadow: 5px 5px 5px #d3d3d3;
+    background-color: white;
+    font-weight: bold;
+    padding: 25px 100px 50px 50px;
+}
+
+.formCont > div {
+    font-size: 25px;
+}
+
+.columnCont {
+    display: flex; 
+}
+
+fieldset.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputCont {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    height: 30px;
+    padding: 20px;
 }
 
 

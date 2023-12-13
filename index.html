@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- Left side -->
 <div class="imgHalf">
     <img class="bg" src="./img/john-towner-3Kv48NS4WUU-unsplash.jpg" alt="image">
     <div class="logoTxt"><img class="logo" src="./img/treeWhite.png" alt="TREE">Pine Forest Trails</div>
@@ -15,37 +14,49 @@
     <div class="source">Photo by <a href="https://unsplash.com/@heytowner">John Towner</a> on <a href="https://unsplash.com/photos/empty-concrete-road-covered-surrounded-by-tall-tress-with-sun-rays-3Kv48NS4WUU ">Unsplash</a></div>
     </div>
 </div>
-<!-- Right side -->
 <div class="otherHalf">
     <div class="tCont">
-        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
-        </p>
-        <p>You <em>know</em> you want to.</p>
+        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started. <br>
+            <br>You <em>know</em> you want to.</p>
     </div>
     <div class="formCont">
         <div>Let's do this!</div>
         <form action="" method="post">
-            <fieldset>
-                <label for="firstName"> FIRST NAME</label>
-                <input type="text" id="firstName" name="firstName">
-                <label for="">EMAIL</label>
-                <input type="mail" id="email" name="email">
-                <label for="pw">PASSWORD</label>
-                <input type="text" id="pw" name="pw">
-            </fieldset>
-            <fieldset>
-                <label for="lastName">LAST NAME</label>
-                <input type="text" id="lastName" name="lastName">
-                <label for="telNum">PHONE NUMBER</label>
-                <input type="tel" id="telNum" name="telNum" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" >
-                <label for="confPw">CONFIRM PASSWORD</label>
-                <input type="text" id="confPw" name="confPw">
-            </fieldset>
+            <div class="columnCont">
+                <fieldset class="text">
+                    <div class="inputCont">
+                        <label for="firstName"> FIRST NAME</label>
+                        <input type="text" id="firstName" name="firstName">
+                    </div>
+                    <div class="inputCont">
+                        <label for="">EMAIL</label>
+                        <input type="mail" id="email" name="email">
+                    </div>
+                    <div class="inputCont">
+                        <label for="pw">PASSWORD</label>
+                        <input type="text" id="pw" name="pw">
+                    </div>
+                </fieldset>
+                <fieldset class="text">
+                    <div class="inputCont">
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" id="lastName" name="lastName">
+                    </div>
+                    <div class="inputCont">
+                    <label for="telNum">PHONE NUMBER</label>
+                    <input type="tel" id="telNum" name="telNum" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" >
+                    </div>
+                    <div class="inputCont">
+                        <label for="confPw">CONFIRM PASSWORD</label>
+                        <input type="text" id="confPw" name="confPw">
+                    </div>
+                </fieldset>
+            </div>
             <fieldset>
                 <button type="submit">Create Account</button>
                 <div>Already have an account? <a href="">Log in</a></div>
             </fieldset>
-    </form>
+        </form>
     </div>
     <div class="buttonCont">
 
