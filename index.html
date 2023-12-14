@@ -19,48 +19,45 @@
         <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started. <br>
             <br>You <em>know</em> you want to.</p>
     </div>
-    <div class="formCont">
-        <div>Let's do this!</div>
-        <form action="" method="post">
+    <form action="" method="post">
+        <div class="textCont">
+            <div>Let's do this!</div>
             <div class="columnCont">
                 <fieldset class="text">
                     <div class="inputCont">
                         <label for="firstName"> FIRST NAME</label>
-                        <input type="text" id="firstName" name="firstName">
+                        <input type="text" id="firstName" name="firstName" required>
                     </div>
                     <div class="inputCont">
                         <label for="">EMAIL</label>
-                        <input type="mail" id="email" name="email">
+                        <input type="email" id="email" name="email" required>
                     </div>
                     <div class="inputCont">
                         <label for="pw">PASSWORD</label>
-                        <input type="text" id="pw" name="pw">
+                        <input type="password" id="pw" name="pw" required>
                     </div>
                 </fieldset>
                 <fieldset class="text">
                     <div class="inputCont">
                         <label for="lastName">LAST NAME</label>
-                        <input type="text" id="lastName" name="lastName">
+                        <input type="text" id="lastName" name="lastName" required>
                     </div>
                     <div class="inputCont">
                     <label for="telNum">PHONE NUMBER</label>
-                    <input type="tel" id="telNum" name="telNum" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" >
+                    <input type="tel" id="telNum" name="telNum" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"  required>
                     </div>
                     <div class="inputCont">
                         <label for="confPw">CONFIRM PASSWORD</label>
-                        <input type="text" id="confPw" name="confPw">
+                        <input type="password" id="confPw" name="confPw" required>
                     </div>
                 </fieldset>
             </div>
-            <fieldset>
-                <button type="submit">Create Account</button>
-                <div>Already have an account? <a href="">Log in</a></div>
-            </fieldset>
-        </form>
-    </div>
-    <div class="buttonCont">
-
-    </div>
+        </div>
+        <fieldset>
+            <button type="submit">Create Account</button>
+            <div>Already have an account? <a href="">Log in</a></div>
+        </fieldset>
+    </form>
 </div>
 </body>
 </html>

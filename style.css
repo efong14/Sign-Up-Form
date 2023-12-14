@@ -62,7 +62,7 @@ body {
 /* Left Half */
 
 .otherHalf {
-    min-width: 700px;
+    min-width: fit-content;
     height: 100vh;
     background-color: #f7f7f7;
 }
@@ -73,15 +73,12 @@ p {
     padding: 150px 100px 30px 60px;
 }
 
-.formCont {
+.textCont {
     border: grey solid 1px;
     box-shadow: 5px 5px 5px #d3d3d3;
     background-color: white;
     font-weight: bold;
     padding: 25px 100px 50px 50px;
-}
-
-.formCont > div {
     font-size: 25px;
 }
 
@@ -90,6 +87,7 @@ p {
 }
 
 fieldset.text {
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
@@ -97,9 +95,24 @@ fieldset.text {
 .inputCont {
     display: flex;
     flex-direction: column;
-    min-width: 200px;
-    height: 30px;
+    min-width: 300px;
     padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+input {
+    height: 25px;
+    font-size: 18px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #e5e7eb;
+    padding: 0 10px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid blue;
 }
 
 
