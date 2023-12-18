@@ -32,25 +32,30 @@
                     </div>
                     <div class="inputCont">
                         <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" placeholder="name@mail.com" required>
+                        <span></span>
                     </div>
                     <div class="inputCont">
                         <label for="pw">PASSWORD</label>
-                        <input type="password" id="pw" name="pw" required>
+                        <input type="password" id="pw" name="pw" onkeyup="check();" required>
+                        <span></span>
                     </div>
                 </fieldset>
                 <fieldset class="text">
                     <div class="inputCont">
                         <label for="lastName">LAST NAME</label>
                         <input type="text" id="lastName" name="lastName" required>
+                        <span></span>
                     </div>
                     <div class="inputCont">
                     <label for="telNum">PHONE NUMBER</label>
-                    <input type="tel" id="telNum" name="telNum" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"  required>
+                    <input type="tel" id="telNum" name="telNum" placeholder="09XX-XXX-XXXX" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"  required>
+                    <span></span>
                     </div>
                     <div class="inputCont">
-                        <label for="confPw">CONFIRM PASSWORD</label>
-                        <input type="password" id="confPw" name="confPw" required>
+                        <label for="confirm">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm" name="confirm" onkeyup="check();" required>
+                        <span></span>
                     </div>
                 </fieldset>
             </div>

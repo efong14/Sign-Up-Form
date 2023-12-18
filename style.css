@@ -119,15 +119,29 @@ input.required {
     border-color: red;
 }
 
-input:valid {
-    border-color: blue;
+input.required + span::after {
+    position: absolute;
+    content: "Please fill out this field";
+    color: red;
+    font-size: 15px;
+    min-width: 500px;
 }
 
-/* input:invalid + span::after{
-    content: "*This item is required";
-    font-size: 20px;
-} */
-
-/* input:required {
+input:valid {
     border-color: green;
-} */
+}
+
+input:valid + span::after {
+    content: "";
+}
+
+input.error:valid + span::after{
+    content: "Passwords do not match";
+    color: red;
+    font-size: 15px;
+    min-width: 500px;
+}
+
+input.error {
+    border-color: red;
+}
